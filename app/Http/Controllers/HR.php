@@ -1843,6 +1843,9 @@ public function LeaveSave(request $request)
 
 
     $leave = DB::table('leave')->where('LeaveID',$id)->get();
+
+    if($leave)
+    { session::put('EmployeeID',$leave[0]->EmployeeID); }
     $employee = DB::table('v_employee')->where('EmployeeID',session::get('EmployeeID'))->get();
     $branch = DB::table('branch')->get();
  

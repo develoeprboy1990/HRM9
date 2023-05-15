@@ -60,7 +60,7 @@
                                          <td >{{$value->Reason}}</td>
                                          <td >{{$value->JobTitleName}}</td>
                                          <td >{{$value->DepartmentName}}</td>
-                                         <td ><a target="_blank" href="{{URL('/EmployeeDetail/'.$value->EmployeeID)}}">Detail</a></td>
+                                         <td ><a target="_blank" href="{{URL('/LeaveEdit/'.$value->LeaveID)}}">Detail</a></td>
                                          </tr>
                                          @endforeach   
                                          </tbody>

@@ -47,7 +47,7 @@
          <option value="{{$value->BranchID}}" {{(old('BranchID')== $value->BranchID) ? 'selected=selected': '' }}>{{$value->BranchName}}</option>
         @endforeach
        
-    </div>
+
      </select>
      </div>
       </div>
